@@ -60,13 +60,6 @@ images.forEach((image) => {
   foxGallery.appendChild(listElement);
 });
 
-foxGallery.onClick = function (event) {
-  let target = event.target;
-  if (target.tagName != "img") return;
-  const imageLink = target.getAttribute("data-source");
-  console.log(imageLink);
-};
-
 foxGallery.addEventListener("click", function (event) {
   let target = event.target;
   if (target.tagName != "IMG") return;
